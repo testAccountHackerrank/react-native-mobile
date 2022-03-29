@@ -1,0 +1,10 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  ide_config:
+    default_open_files:
+    - App.js
+    project_menu:
+      run: expo start --tunnel
+      install: rm -rf /projects/challenge/node_modules && cp -r /tmp/fast/node_modules /projects/challenge/
+      test: npm test
